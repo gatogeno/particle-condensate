@@ -1,0 +1,41 @@
+#Simulation parameters
+boxlength = 40
+sitesbylength=128
+dimension=1
+totalmass=1
+
+#Field-configurations available: spin0, spin2
+fieldtype=spin0
+condensatefraction=0
+
+#initial conditions available: testing, random, centralsoliton, multiple-solitons, from-file
+initialcondf=centralsoliton
+radc=10
+numbersolitons=10
+
+initialcondth=maxwellian
+sigma=1
+particlenumber=20000
+
+#density assignments available: nearestgridpoint, cloudincell
+densityassignment=cloudincell
+
+#initialfilef=fieldinitial.npy
+#initialfileth=fieldinitialth.npy
+
+#Potentials available: testing, full
+potential = full
+omega=0
+gravitational=False
+selfcoupling=0
+lengthwell=3
+
+
+#output folder
+output = outputfiles/maxwellian1d
+
+evolver=kickdriftkick
+imagprop=False
+iterations=50000
+recordevery=100
+

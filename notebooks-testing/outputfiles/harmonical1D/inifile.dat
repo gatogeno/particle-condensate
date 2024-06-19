@@ -1,0 +1,40 @@
+#Simulation parameters
+boxlength = 10
+sitesbylength=128
+dimension=1
+totalmass=1
+
+#Field-configurations available: spin0, spin2
+fieldtype=spin0
+condensatefraction=1
+
+#initial conditions available: testing, random, centralsoliton, multiple-solitons, from-file
+initialcondf=random
+radc=2
+numbersolitons=10
+
+initialcondth=random
+particlenumber=500
+
+#density assignments available: nearestgridpoint, cloudincell
+densityassignment=cloudincell
+
+#initialfilef=fieldinitial.npy
+#initialfileth=fieldinitialth.npy
+
+#Potentials available: testing, full
+potential = full
+omega=3
+gravitational=False
+selfcoupling=0
+lengthwell=3
+
+
+#output folder
+output = outputfiles/harmonical1D
+
+evolver=driftkickdrift
+imagprop=True
+iterations=100000
+recordevery=100
+
