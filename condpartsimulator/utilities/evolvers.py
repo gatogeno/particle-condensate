@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.fft import fftn, fftfreq, ifftn, fftshift, ifftshift
+from scipy.fftpack import fftn, fftfreq, ifftn, fftshift, ifftshift
 from scipy.interpolate import interp1d, RegularGridInterpolator
 from utilities import potentials
 from utilities import additionalfunctions as adf

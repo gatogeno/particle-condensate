@@ -1,19 +1,29 @@
 import sys
 import numpy as np
-from scipy.fft import fftn, fftfreq, ifftn, fftshift, ifftshift
+from scipy.fftpack import fftn, fftfreq, ifftn, fftshift, ifftshift
 from utilities import storer, grid, fields, potentials
+from typing import List
 
 #Function that removes the comments with # in the initial file
-def remove_comments(lines: list[str]) -> list[str]:
+#def remove_comments(lines: list[str]) -> list[str]:
+#    new_lines = []
+#    for line in lines: 
+#        if line.startswith("#"):
+#            continue
+
+#        line = line.split(" #")[0]
+#        if line.strip() != "":
+#            new_lines.append(line)
+#
+#    return new_lines
+def remove_comments(lines):
     new_lines = []
-    for line in lines: 
+    for line in lines:
         if line.startswith("#"):
             continue
-
         line = line.split(" #")[0]
         if line.strip() != "":
             new_lines.append(line)
-
     return new_lines
 
 #Function that returns the index in an array for a specific value:

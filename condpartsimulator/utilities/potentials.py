@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.fft import fftn, fftfreq, ifftn, fftshift, ifftshift
+from scipy.fftpack import fftn, fftfreq, ifftn, fftshift, ifftshift
 
 def potential(parameters, grids, fieldY, selector):
     #selector is a parameter to be used for the full potential. It is 1 if the potential will be for the condensate and 0 if it will be for the particles. This since they are different in the self-interaction part.

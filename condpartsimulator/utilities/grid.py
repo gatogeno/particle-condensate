@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.fft import fftn, fftfreq, ifftn, fftshift, ifftshift
+from scipy.fftpack import fftn, fftfreq, ifftn, fftshift, ifftshift
 
 #Create a spatial and momentum grid
 def creategrid(parameters):
